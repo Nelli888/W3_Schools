@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./scss/iconsfont.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>CSS display Property</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu">
+          <li>
+            <a href="#"><img src="./img/W.png" alt="logo" /></a>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">Tutorials</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">References</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Exercises</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Videos</a></li>
+        </ul>
+        <ul class="menu-right">
+          <li><a href="#" class="menu-right__btn-1">Upgrade</a></li>
+          <li><a href="#" class="menu-right__btn-2">Get Certified</a></li>
+          <li><a href="#" class="menu-right__btn-3">Free Website</a></li>
+          <li><a href="#" class="menu-right__btn-4">Log in</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="nav">
+      <div class="nav__item">
+        <a href="#" class="nav__link"><i class="fa-solid fa-house-chimney"></i></a>
+        <ul class="nav__menu">
+          <li><a href="#" class="nav__link">html</a></li>
+          <li><a href="#" class="nav__link">CSS</a></li>
+          <li><a href="#" class="nav__link">JAVASCRIPT</a></li>
+          <li><a href="#" class="nav__link">PYTHON</a></li>
+          <li><a href="#" class="nav__link">JAVA</a></li>
+          <li><a href="#" class="nav__link">PHP</a></li>
+          <li><a href="#" class="nav__link">BOOTSTRAP</a></li>
+          <li><a href="#" class="nav__link">HOW TO</a></li>
+          <li><a href="#" class="nav__link">W3.CSS</a></li>
+          <li><a href="#" class="nav__link">C</a></li>
+          <li><a href="#" class="nav__link">C++</a></li>
+          <li><a href="#" class="nav__link">C#</a></li>
+          <li><a href="#" class="nav__link">REACT</a></li>
+          <li><a href="#" class="nav__link">R</a></li>
+          <li><a href="#" class="nav__link">JQUERY</a></li>
+          <li><a href="#" class="nav__link">DJANGO</a></li>
+          <li><a href="#" class="nav__link">TYPESCRIPT</a></li>
+          <li><a href="#" class="nav__link">NODEJS</a></li>
+          <li><a href="#" class="nav__link">MYSQL</a></li>
+        </ul>
+      </div>
+
+      <ul class="nav__menu-right">
+        <li>
+          <a href="#" class="nav__link"><i class="fa-solid fa-circle-half-stroke"></i></a>
+        </li>
+        <li>
+          <a href="#" class="nav__link"><i class="fa-solid fa-earth-americas"></i></a>
+        </li>
+        <li>
+          <a href="#" class="nav__link"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <nav class="nav-left">
+        <h5 class="nav-left__title">CSS displays</h5>
+        <ul class="nav-left__menu">
+          <li class="nav-left__item"><a href="#inline" class="nav-left__link">inline</a></li>
+          <li class="nav-left__item"><a href="#block" class="nav-left__link">block</a></li>
+          <li class="nav-left__item"><a href="#contents" class="nav-left__link">contents</a></li>
+          <li class="nav-left__item"><a href="#flex" class="nav-left__link">flex</a></li>
+          <li class="nav-left__item"><a href="#grid" class="nav-left__link">grid</a></li>
+          <li class="nav-left__item"><a href="#inline-block" class="nav-left__link">inline-block</a></li>
+          <li class="nav-left__item"><a href="#inline-flex" class="nav-left__link">inline-flex</a></li>
+          <li class="nav-left__item"><a href="#inline-grid" class="nav-left__link">inline-grid</a></li>
+          <li class="nav-left__item"><a href="#inline-table" class="nav-left__link">inline-table</a></li>
+          <li class="nav-left__item"><a href="#list-item" class="nav-left__link">list-item</a></li>
+          <li class="nav-left__item"><a href="#run-in" class="nav-left__link">run-in</a></li>
+          <li class="nav-left__item"><a href="#table" class="nav-left__link">table</a></li>
+          <li class="nav-left__item"><a href="#table-caption" class="nav-left__link">table-caption</a></li>
+          <li class="nav-left__item"><a href="#table-column-group" class="nav-left__link">table-column-group</a></li>
+          <li class="nav-left__item"><a href="#table-header-group" class="nav-left__link">table-header-group</a></li>
+          <li class="nav-left__item"><a href="#table-footer-group" class="nav-left__link">table-footer-group</a></li>
+          <li class="nav-left__item"><a href="#table-row-group" class="nav-left__link">table-row-group</a></li>
+          <li class="nav-left__item"><a href="#table-cell" class="nav-left__link">table-cell</a></li>
+          <li class="nav-left__item"><a href="#table-column" class="nav-left__link">table-column</a></li>
+          <li class="nav-left__item"><a href="#table-row" class="nav-left__link">table-row</a></li>
+          <li class="nav-left__item"><a href="#none" class="nav-left__link">none</a></li>
+          <li class="nav-left__item"><a href="#initial" class="nav-left__link">initial</a></li>
+          <li class="nav-left__item"><a href="#inherit" class="nav-left__link">inherit</a></li>
+        </ul>
+        <p class="nav-left__text">
+          <b> inline: </b> <br />
+          Displays an element as an inline element <br />
+          (like &#60; span &#62; ) <br />
+          Any height and width properties will have no effect.
+        </p>
+      </nav>
+      <div class="container__content">
+        <div class="container__item">
+          <div class="container__main">
+            <aside class="aside">
+              <ul class="aside__menu">
+                <li class="aside__item">
+                  <a href="#"><img src="./img/8.png" alt="img" /></a>
+                </li>
+              </ul>
+            </aside>
+            <main class="main">
+              <section class="section">
+                <h1 class="section__title-main">CSS display Property</h1>
+                <div class="section__nav">
+                  <button class="btn"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
+                  <button class="btn-1">Complete CSS Reference</button>
+                  <button class="btn">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+                <div class="example">
+                  <div class="example__container">
+                    <h3 class="example__title">Example</h3>
+                    <h4 class="example__subtitle">Use of some different display values:</h4>
+                    <p class="example__content">
+                      <span class="color-1">p.ex1</span> {<span class="color-2">display</span>:<span class="color-3">none</span>;<span class="color-4"
+                        >}</span
+                      ><br />
+                      <span class="color-1">p.ex2</span> {<span class="color-2">display</span>:<span class="color-3">inline</span>;<span
+                        class="color-4"
+                        >}</span
+                      ><br />
+                      <span class="color-1">p.ex3</span> {<span class="color-2">display</span>:<span class="color-3">block</span>;<span
+                        class="color-4"
+                        >}</span
+                      ><br />
+                      <span class="color-1">p.ex4</span> {<span class="color-2">display</span>:<span class="color-3">inline-block</span>;<span
+                        class="color-4"
+                        >}</span
+                      >
+                    </p>
+                    <button class="btn">Try it Yourself &#187;</button>
+                  </div>
+                  <p class="example__text">More "Try it Yourself" examples below.</p>
+                </div>
+              </section>
+              <section class="section">
+                <h2 class="section__title">Definition and Usage</h2>
+                <p class="section__text">
+                  The <span class="highlight"> display </span>property specifies the display behavior (the type of rendering box) of an element.
+                </p>
+                <p class="section__text">
+                  In HTML, the default display property value is taken from the HTML specifications or from the browser/user default style sheet. The
+                  default value in XML is inline, including SVG elements.
+                </p>
+                <button class="btn">Show demo<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                <table class="table">
+                  <tr>
+                    <th>Default value:</th>
+                    <td>?</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Inherited:</th>
+                    <td>no</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Animatable:</th>
+                    <td>
+                      no.<a href="#" class="section__link">Read about <i>animatable</i></a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Version:</th>
+                    <td>CSS1</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>JavaScript syntax:</th>
+                    <td><i>object.</i> style.display="none"</td>
+                    <td><button class="btn-small">Try it</button></td>
+                  </tr>
+                </table>
+              </section>
+              <section class="section">
+                <h2 class="section__title">Browser Support</h2>
+                <p class="section__text">The numbers in the table specify the first browser version that fully supports the property.</p>
+                <table class="table-one">
+                  <tr>
+                    <th>Property</th>
+                    <td><img src="./img/chrome.png" alt="img" /></td>
+                    <td><img src="./img/edge.png" alt="img" /></td>
+                    <td><img src="./img/compatible_firefox.png" alt="img" /></td>
+                    <td><img src="./img/compatible_safari.png" alt="img" /></td>
+                    <td><img src="./img/compatible_opera.png" alt="img" /></td>
+                  </tr>
+                  <tr>
+                    <th>display</th>
+                    <td>4.0</td>
+                    <td>8.0</td>
+                    <td>3.0</td>
+                    <td>3.1</td>
+                    <td>7.0</td>
+                  </tr>
+                </table>
+                <p class="section__text"><b>Note:</b>The values "flex" and "inline-flex" requires the -webkit- prefix to work in Safari.</p>
+                <p class="section__text"><b>Note:</b>"display: contents" does not work in Edge prior version 79.</p>
+              </section>
+              <section class="section">
+                <h2 class="section__title">CSS Syntax</h2>
+                <p class="section__text-border">
+                  display: <span class="color-4"><i>value;</i></span>
+                </p>
+                <h2 class="section__title">Property Values</h2>
+                <table class="table-two">
+                  <tr>
+                    <th>Value</th>
+                    <th>Description</th>
+                    <th>Play it</th>
+                  </tr>
+                  <tr>
+                    <td id="inline">inline</td>
+                    <td>Displays an element as an inline element (like &#60; span &#62; ). Any height and width properties will have no effect</td>
+                    <td>
+                      <button class="btn-small">Demo<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td id="block">block</td>
+                    <td>Displays an element as a block element (like &#60; p &#62; ). It starts on a new line, and takes up the whole width</td>
+                    <td>
+                      <button class="btn-small">Demo<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td id="contents">contents</td>
+                    <td>Makes the container disappear, making the child elements children of the element the next level up in the DOM</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="flex">flex</td>
+                    <td>Displays an element as a block-level flex container</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="grid">grid</td>
+                    <td>Displays an element as a block-level grid container</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="inline-block">inline-block</td>
+                    <td>
+                      Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply
+                      height and width values
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="inline-flex">inline-flex</td>
+                    <td>Displays an element as an inline-level flex container</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="inline-grid">inline-grid</td>
+                    <td>Displays an element as an inline-level grid container</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="inline-table">inline-table</td>
+                    <td>The element is displayed as an inline-level table</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="list-item">list-item</td>
+                    <td>Let the element behave like a &#60; li &#62; element</td>
+                    <td>
+                      <button class="btn-small">Demo<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td id="run-in">run-in</td>
+                    <td>Displays an element as either block or inline, depending on context</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table">table</td>
+                    <td>Let the element behave like a &#60; table &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table-caption">table-caption</td>
+                    <td>Let the element behave like a &#60; caption &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table-column-group">table-column-group</td>
+                    <td>Let the element behave like a &#60; colgroup &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table-header-group">table-header-group</td>
+                    <td>Let the element behave like a &#60; thead &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table-footer-group">table-footer-group</td>
+                    <td>Let the element behave like a &#60; tfoot &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table-row-group">table-row-group</td>
+                    <td>Let the element behave like a &#60; tbody &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table-cell">table-cell</td>
+                    <td>Let the element behave like a &#60; td &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table-column">table-column</td>
+                    <td>Let the element behave like a &#60; col &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="table-row">table-row</td>
+                    <td>Let the element behave like a &#60; tr &#62; element</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="none">none</td>
+                    <td>The element is completely removed</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="initial">initial</td>
+                    <td>
+                      Sets this property to its default value.<a href="#" class="section__link">Read about <i>initial</i></a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="inherit">inherit</td>
+                    <td>
+                      Inherits this property from its parent element.<a href="#" class="section__link">Read about <i> inherit</i></a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </table>
+              </section>
+              <section class="section">
+                <h2 class="section__title">More Examples</h2>
+                <div class="example">
+                  <div class="example__container">
+                    <h3 class="example__title">Example</h3>
+                    <h4 class="example__subtitle">
+                      A demonstration of how to use the contents property value. In the following example the .a container will disappear, and making
+                      the child elements (.b) children of the element the next level up in the DOM:
+                    </h4>
+                    <p class="example__content">
+                      <span class="color-1">.a</span> { <br />
+                      <span class="color-2">display</span>:<span class="color-3">contents</span>;<br />
+                      <span class="color-2">border</span>:<span class="color-3"> 2px solid red</span>;<br />
+                      <span class="color-2">background-color</span>:<span class="color-3">#ccc</span>;<br />
+                      <span class="color-2">padding</span>:<span class="color-3"> 10px</span>;<br />
+                      <span class="color-2">width</span>:<span class="color-3"> 200px</span>;<br />
+                      } <br /><br />
+                      <span class="color-1">.b</span> { <br />
+                      <span class="color-2">border</span>:<span class="color-3"> 2px solid blue</span>;<br />
+                      <span class="color-2">background-color</span>:<span class="color-3">lightblue</span>;<br />
+                      <span class="color-2">padding</span>:<span class="color-3"> 10px</span>;<br />
+                      }
+                    </p>
+                    <button class="btn">Try it Yourself &#187;</button>
+                  </div>
+                </div>
+                <div class="example">
+                  <div class="example__container">
+                    <h3 class="example__title">Example</h3>
+                    <h4 class="example__subtitle">A demonstration of how to use the inherit property value:</h4>
+                    <p class="example__content">
+                      <span class="color-1">body</span> { <br />
+                      <span class="color-2">display</span>:<span class="color-3">inline</span>;<br />
+                      } <br /><br />
+                      <span class="color-1">p</span> { <br />
+                      <span class="color-2">display</span>:<span class="color-3">inherit</span>;<br />
+                      }
+                    </p>
+                    <button class="btn">Try it Yourself &#187;</button>
+                  </div>
+                </div>
+                <div class="example">
+                  <div class="example__container">
+                    <h3 class="example__title">Example</h3>
+                    <h4 class="example__subtitle">Set the direction of some flexible items inside a &#60;div&#62; element in reverse order:</h4>
+                    <p class="example__content">
+                      <span class="color-1">div</span> { <br />
+                      <span class="color-2">display</span>:<span class="color-3">flex</span>;<br />
+                      <span class="color-2"> flex-direction</span>:<span class="color-3">row-reverse</span>;<br />
+                      }
+                    </p>
+                    <button class="btn">Try it Yourself &#187;</button>
+                  </div>
+                </div>
+              </section>
+              <section class="section">
+                <h2 class="section__title">Related Pages</h2>
+                <p class="section__text">CSS tutorial:<a href="#" class="section__link">CSS Display and visibility</a></p>
+                <p class="section__text">HTML DOM reference:<a href="#" class="section__link">display property</a></p>
+                <div class="section__nav section__nav-border">
+                  <button class="btn"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
+                  <button class="btn-1">Complete CSS Reference</button>
+                  <button class="btn">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+              </section>
+            </main>
+          </div>
+          <aside class="aside-right">
+            <h5 class="title-aside">ADVERTISEMENT</h5>
+            <ul class="aside-right__menu">
+              <li>
+                <a href="#"><img src="./img/1.png" alt="img" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/2.png" alt="img" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/5.png" alt="img" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/3.png" alt="img" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/1.png" alt="img" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/2.png" alt="img" /></a>
+              </li>
+            </ul>
+            <h5 class="title-aside">ADVERTISEMENT</h5>
+            <ul class="aside-right__menu">
+              <li>
+                <a href="#"><img src="./img/1.png" alt="img" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/5.png" alt="img" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/2.png" alt="img" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/5.png" alt="img" /></a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <aside class="aside">
+          <ul class="aside__menu">
+            <li class="aside__item">
+              <h5 class="title-aside">ADVERTISEMENT</h5>
+              <a href="#"><img src="./img/6.png" alt="img" /></a>
+            </li>
+            <li class="aside__item">
+              <h5 class="title-aside">ADVERTISEMENT</h5>
+              <a href="#"><img src="./img/7.png" alt="img" /></a>
+            </li>
+          </ul>
+        </aside>
+        <nav class="nav-bottom">
+          <ul class="nav-bottom__menu">
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__btn">Report Error</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__btn">Spaces</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__btn">Upgrade</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__btn">Newsletter</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__btn">Get Certified</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-bottom-low">
+          <div class="nav-bottom-low__item">
+            <h5 class="nav-bottom-low__title">Top Tutorials</h5>
+            <ul class="nav-bottom-low__menu">
+              <li><a href="#" class="nav-bottom-low__link">HTML Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">CSS Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">JavaScript Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">How To Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">SQL Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Python Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">W3.CSS Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Bootstrap Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">PHP Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Java Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">C++ Tutorial</a></li>
+              <li><a href="#" class="nav-bottom-low__link">jQuery Tutorial</a></li>
+            </ul>
+          </div>
+          <div class="nav-bottom-low__item">
+            <h5 class="nav-bottom-low__title">Top References</h5>
+            <ul class="nav-bottom-low__menu">
+              <li><a href="#" class="nav-bottom-low__link">HTML Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">CSS Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">JavaScript Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">SQL Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Python Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">W3.CSS Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Bootstrap Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">PHP Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">HTML Colors</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Java Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Angular Reference</a></li>
+              <li><a href="#" class="nav-bottom-low__link">jQuery Reference</a></li>
+            </ul>
+          </div>
+          <div class="nav-bottom-low__item">
+            <h5 class="nav-bottom-low__title">Top Examples</h5>
+            <ul class="nav-bottom-low__menu">
+              <li><a href="#" class="nav-bottom-low__link">HTML Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">CSS Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">JavaScript Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">How To Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">SQL Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Python Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">W3.CSS Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Bootstrap Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">PHP Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Java Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">XML Examples</a></li>
+              <li><a href="#" class="nav-bottom-low__link">jQuery Examples</a></li>
+            </ul>
+          </div>
+          <div class="nav-bottom-low__item">
+            <h5 class="nav-bottom-low__title">Get Certified</h5>
+            <ul class="nav-bottom-low__menu">
+              <li><a href="#" class="nav-bottom-low__link">HTML Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">CSS Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">JavaScript Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Front End Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">SQL Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Python Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">PHP Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">jQuery Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">Java Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">C++ Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">C# Certificate</a></li>
+              <li><a href="#" class="nav-bottom-low__link">XML Certificate</a></li>
+            </ul>
+          </div>
+        </nav>
+        <footer class="footer">
+          <p class="footer__text footer__text-right"><a href="#" class="footer__link"> FORUM</a> | <a href="#" class="footer__link"> ABOUT </a></p>
+          <p class="footer__text">
+            W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and
+            examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree
+            to have read and accepted our terms of use, cookie and privacy policy.
+          </p>
+          <p class="footer__text">
+            <a href="#" class="footer__link">Copyright 1999-2022</a> by Refsnes Data. All Rights Reserved. <br />
+            <a href="#" class="footer__link"> W3Schools is Powered by W3.CSS.</a>
+          </p>
+          <a href="#" class="footer__link"><img src="./img/W.png" alt="logo" /></a>
+        </footer>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
